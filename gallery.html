@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+    <link href="gallery.css" rel="stylesheet">
+    <title>Camera Gallery</title>
+</head>
+<body>
+
+    <div class="gallery-container"></div>
+    </div>
+    <div class="back">Back</div>
+    
+
+</body>
+
+<script src="db.js"></script>
+<script src="gallery.js"></script>
+
+<script>
+    let backElem = document.querySelector(".back");
+    backElem.addEventListener("click", (e) => {
+        location.assign("index.html");
+    })
+</script>
+</html>
+

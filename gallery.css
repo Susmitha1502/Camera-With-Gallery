@@ -1,0 +1,92 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+}
+::-webkit-scrollbar {
+    display: none;
+  }
+  
+.back{
+    color: white;
+    position: fixed;
+    width: 5rem;
+    height: 5rem;
+    background-color: rgb(80, 82, 82);
+    border-radius: 50%;
+    right: 5rem;
+    bottom: 4rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.back:hover{
+    cursor: pointer;
+}
+
+
+.gallery-container{
+    background-color: #e7e9ea;
+    padding: 10px;
+    height: 100%;
+    margin: 10px;
+    border: 2.5px solid rgb(182, 178, 178);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.media-container{
+    height: 15rem;
+    width: 15rem;
+    border: 10px solid white;
+    border-radius: 15px;
+    margin: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+}
+
+.media{
+    height: calc( 100% - 3rem - 3rem );
+}
+
+.media > *{
+    width: 100%;
+    height: 100%;
+    object-fit: fill;
+}
+
+.action-container{
+    display: flex;
+    justify-content: space-evenly;
+    height: 3rem;
+    align-items: center;
+}
+
+.delete, .download{
+    height: 3rem;
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+    background-color: whitesmoke;
+    border: 1px dashed black;
+}
+
+.material-icons{
+    color: rgb(87, 86, 86);
+    font-size: 2.5rem;
+}
+
+.material-icons:hover{
+    cursor: pointer;
+}
+
+.delete .material-icons{
+    color: rgba(234, 36, 36, 0.921);
+}
